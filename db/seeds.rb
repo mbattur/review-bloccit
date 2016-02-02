@@ -6,6 +6,15 @@
 end
 posts = Post.all
 
+50.times do
+  Question.create!(
+    title: RandomData.random_sentence,
+    body: RandomData.random_paragraph,
+    resolved: false
+    )
+end
+questions = Question.all
+
 100.times do
   Comment.create!(
     post: posts.sample,
@@ -16,3 +25,4 @@ end
 puts "Seed finished"
 puts "#{Post.count} posts created"
 puts "#{Comment.count} comments created"
+puts "#{Question.count} questions created"
