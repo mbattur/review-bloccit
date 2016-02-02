@@ -2,7 +2,8 @@ require 'rails_helper'
 
 RSpec.describe Comment, type: :model do
 
- let(:post) { Post.create!(title: "New Post Title", body: "New Post body") }
+ let(:topic) { Topic.create!(name: RandomData.randam_sentence, description: RandomData.random_paragraph) }
+ let(:post) { topic.posts.create!(title: RandomData.randam_sentence, body: RandomData.random_paragraph) }
  let(:comment) { Comment.create!(body: 'Comment Body', post: post) }
  
  describe "attributes" do
