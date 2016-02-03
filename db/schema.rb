@@ -40,7 +40,6 @@ ActiveRecord::Schema.define(version: 20160202155349) do
 
   add_index "posts", ["topic_id"], name: "index_posts_on_topic_id"
 
-
   create_table "topics", force: :cascade do |t|
     t.string   "name"
     t.boolean  "public",      default: true
