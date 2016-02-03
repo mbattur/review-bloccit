@@ -27,7 +27,6 @@ ActiveRecord::Schema.define(version: 20160118191056) do
     t.text     "body"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-<<<<<<< HEAD
     t.integer  "topic_id"
   end
 
@@ -39,8 +38,5 @@ ActiveRecord::Schema.define(version: 20160118191056) do
     t.text     "description"
     t.datetime "created_at",                 null: false
     t.datetime "updated_at",                 null: false
-=======
->>>>>>> parent of 3c85c92... Merge pull request #1 from mbattur/check-34
   end
-
 end
