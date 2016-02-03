@@ -11,15 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160202155349) do
-
-  create_table "advertisements", force: :cascade do |t|
-    t.string   "title"
-    t.text     "copy"
-    t.integer  "price"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
+ActiveRecord::Schema.define(version: 20160118191056) do
 
   create_table "comments", force: :cascade do |t|
     t.text     "body"
@@ -35,6 +27,7 @@ ActiveRecord::Schema.define(version: 20160202155349) do
     t.text     "body"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+<<<<<<< HEAD
     t.integer  "topic_id"
   end
 
@@ -46,6 +39,8 @@ ActiveRecord::Schema.define(version: 20160202155349) do
     t.text     "description"
     t.datetime "created_at",                 null: false
     t.datetime "updated_at",                 null: false
+=======
+>>>>>>> parent of 3c85c92... Merge pull request #1 from mbattur/check-34
   end
 
 end

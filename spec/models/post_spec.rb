@@ -1,5 +1,6 @@
  require 'rails_helper'
 
+<<<<<<< HEAD
  RSpec.describe Post, type: :model do
    
    let(:topic) { Topic.create!(name: RandomData.random_sentence, description: RandomData.random_paragraph) }
@@ -18,3 +19,18 @@
      end
    end
  end
+=======
+RSpec.describe Post, type: :model do
+  let(:post) { Post.create!(title: "New Post Title", body: "New Post Body") }
+  
+  describe "attributes" do
+    it "should respond to title" do
+      expect(post).to respond_to(:title)
+    end
+    
+    it "should respond to body" do
+      expect(post).to respond_to(:body)
+    end
+  end
+end
+>>>>>>> parent of 3c85c92... Merge pull request #1 from mbattur/check-34
