@@ -1,4 +1,4 @@
- require 'rails_helper'
+require 'rails_helper'
 
  RSpec.describe Post, type: :model do
    let(:topic) { Topic.create!(name: RandomData.random_sentence, description: RandomData.random_paragraph) }
